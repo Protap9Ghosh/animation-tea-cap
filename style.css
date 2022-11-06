@@ -1,0 +1,270 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 3 version
+*/
+
+/*-----------------------------------------------------------------------------------
+
+	Template Name: animation tea cup
+	Template URI: http://www.protap-ghosh.com
+	Description: animation related website
+	Author: Protap Ghosh
+	Author URI: http://www.protap-ghosh.com
+	License: GNU General Public License version 3.0
+	License URI: http://www.gnu.org/licenses/gpl-3.0.html
+	Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+	1. plate area
+	2. cup-outsite area
+	3. image area
+	4. top Area
+	5. baspo Area
+	6. top-in-cricle Area
+	7. tea Area
+	8. handle Area
+
+-----------------------------------------------------------------------------------*/
+
+.
+{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+body {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	min-height: 200px;
+	background: #2980b9;
+}
+
+.continer {
+	position: relative;
+	top: 250px;
+}
+
+.cup-outsite .image img {
+	width: 200px;
+	height: auto;
+	margin-left: 40px;
+	margin-top: 50px;
+	border-radius: 90%;
+	background-color: #EBEEF3;
+}
+
+.cup-outsite {
+	position:relative;
+	width: 280px;
+	height: 300px;
+	background: -webkit-gradient(linear,left top, right top,from(#f5f6fa),to(#dfe4ea));
+	background: -o-linear-gradient(left,#f5f6fa,#dfe4ea);
+	background: linear-gradient(to right,#f5f6fa,#dfe4ea);
+	border-bottom-left-radius: 45%;
+	border-bottom-right-radius: 45%;
+}
+
+.top {
+	position: absolute;
+	top: -30px;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	background: -webkit-gradient(linear,left top, right top,from(#f5f6fa),to(#dfe4ea));
+	background: -o-linear-gradient(left,#f5f6fa,#dfe4ea);
+	background: linear-gradient(to right,#f5f6fa,#dfe4ea);
+	border-radius: 50%;
+}
+
+.top-in-cricle {
+	position: absolute;
+	top: 5px;
+	left: 10px;
+	width: calc(100% - 20px);
+	height: 50px;
+	background: -webkit-gradient(linear,right top, left top,from(#f5f6fa),to(#dfe4ea));
+	background: -o-linear-gradient(right,#f5f6fa,#dfe4ea);
+	background: linear-gradient(to left,#f5f6fa,#dfe4ea);
+	border-radius: 50%;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	overflow: hidden;
+}
+
+.tea {
+	position: absolute;
+	top: 15px;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background: -webkit-gradient(linear,left bottom, left top,from(#e77f67),to(#e15f41));
+	background: -o-linear-gradient(bottom,#e77f67,#e15f41);
+	background: linear-gradient(to top,#e77f67,#e15f41);
+	border-radius: 50%;
+}
+
+.handle {
+	position: absolute;
+	right: -50px;
+	top: 0px;
+	width: 140px;
+	height: 220px;
+	border: 28px solid #E3E7ED;
+	border-left: 28px solid transparent;
+	border-bottom: 28px solid transparent;
+	border-radius: 50%;
+	-webkit-transform: rotate(42deg);
+	    -ms-transform: rotate(42deg);
+	        transform: rotate(42deg);
+}
+
+.plate {
+	position: absolute;
+	bottom: -50px;
+	left: 50%;
+	-webkit-transform: translatex(-50%);
+	    -ms-transform: translatex(-50%);
+	        transform: translatex(-50%);
+	width: 500px;
+	height: 200px;
+	background: #ced6e0;
+	border-radius: 50%;
+	-webkit-box-shadow: 0 35px 35px rgba(0,0,0,0.5);
+	        box-shadow: 0 35px 35px rgba(0,0,0,0.5);
+}
+	
+.plate:before {
+	content: '';
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	bottom: 10px;
+	border-radius: 50%;
+	background: -webkit-gradient(linear,right top, left top,from(#f9f9f9),to(#e7e7e7));
+	background: -o-linear-gradient(right,#f9f9f9,#e7e7e7);
+	background: linear-gradient(to left,#f9f9f9,#e7e7e7);
+}
+	
+	
+.plate:after {
+	content: '';
+	position: absolute;
+	top: 30px;
+	left:30px;
+	right: 30px;
+	bottom: 30px;
+	border-radius: 50%;
+	background: -o-radial-gradient(rgba(0,0,0,0.2) 25%, transparent, transparent);
+	background: radial-gradient(rgba(0,0,0,0.2) 25%, transparent, transparent);
+}
+
+.baspo {
+	position: relative;
+	display: fiex;
+	z-index: 1;
+	padding: 0 20px;
+}
+
+.baspo span {
+	position: relative;
+	bottom: 50px;
+	display: block;
+	margin: 0 2px 50px;
+	min-width: 8px;
+	height: 120px;
+	background: #FFFFFF;
+	float: left;
+	border-radius: 50%;
+	-webkit-animation: protap 5s linear infinite;
+	        animation: protap 5s linear infinite;
+	-webkit-animation-delay: calc(var(--i)* -0.5s);
+	        animation-delay: calc(var(--i)* -0.5s);
+	opacity: 0;
+	-webkit-filter: blur(9px);
+	        filter: blur(9px);
+}
+
+
+@-webkit-keyframes protap {
+	
+	0% {
+		-webkit-transform: translateY(0) scaleX(1);
+		        transform: translateY(0) scaleX(1);
+	}
+	
+	15% {
+		opacity:1;
+	}
+	
+	50% {
+		-webkit-transform: translateY(-150px) scaleX(5);
+		        transform: translateY(-150px) scaleX(5);
+	}
+	
+	95% {
+		opacity:0;
+	}
+	
+	100% {
+		-webkit-transform: translateY(-300px) scaleX(10);
+		        transform: translateY(-300px) scaleX(10);
+	}
+
+
+	
+}
+
+
+@keyframes protap {
+	
+	0% {
+		-webkit-transform: translateY(0) scaleX(1);
+		        transform: translateY(0) scaleX(1);
+	}
+	
+	15% {
+		opacity:1;
+	}
+	
+	50% {
+		-webkit-transform: translateY(-150px) scaleX(5);
+		        transform: translateY(-150px) scaleX(5);
+	}
+	
+	95% {
+		opacity:0;
+	}
+	
+	100% {
+		-webkit-transform: translateY(-300px) scaleX(10);
+		        transform: translateY(-300px) scaleX(10);
+	}
+
+
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+	
